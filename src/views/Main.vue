@@ -1,7 +1,8 @@
 <template>
 	<div id="app">
 		<app-header />
-		<router-view />
+		<Toast />
+		<router-view id="content" />
 		<app-footer />
 	</div>
 </template>
@@ -25,5 +26,9 @@ export default Vue.extend({
 	letter-spacing: 1px;
 	outline: none;
 	text-transform: uppercase;
+}
+
+#content {
+	padding: 42px 5%;
 }
 </style>

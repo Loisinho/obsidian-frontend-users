@@ -1,6 +1,13 @@
 <template>
 	<Toolbar>
-		<template slot="left"></template>
+		<template slot="left">
+			<router-link :to="{ name: 'Home' }">
+				<span id="logo">CLIENT-LOGO</span>
+			</router-link>
+			<router-link :to="{ name: 'Users' }">
+				{{ $t('User Management') }}
+			</router-link>
+		</template>
 		<template slot="right">
 			<i
 				id="user-icon"
@@ -43,6 +50,24 @@ export default {
 	padding: 8px 16px;
 	border: none;
 	border-radius: unset;
+
+	/deep/ .p-toolbar-group-left {
+		display: flex;
+		align-items: center;
+
+		#logo {
+			font-size: 1.4rem;
+			margin-right: 16px;
+		}
+
+		a:not(:first-child) {
+			color: rgba(255, 255, 255, 0.8);
+
+			&:hover {
+				color: rgba(255, 255, 255, 1);
+			}
+		}
+	}
 }
 
 #user-icon {
