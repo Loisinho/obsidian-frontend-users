@@ -1,4 +1,4 @@
-# obsidian3-ts
+# User Management Vue App
 
 ## Project setup
 ```
