@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="1" failures="0" time="5.344">
-  <testsuite name="HelloWorld.vue" errors="0" failures="0" skipped="0" timestamp="2020-07-01T06:13:43" time="1.782" tests="1">
-    <testcase classname="HelloWorld.vue renders props.msg when passed" name="HelloWorld.vue renders props.msg when passed" time="0.015">
+<testsuites name="jest tests" tests="5" failures="0" time="19.704">
+  <testsuite name="Users.vue" errors="0" failures="0" skipped="0" timestamp="2021-02-08T19:30:25" time="9.668" tests="5">
+    <testcase classname="Users.vue addUser function" name="Users.vue addUser function" time="0.236">
+    </testcase>
+    <testcase classname="Users.vue editUser function" name="Users.vue editUser function" time="0.155">
+    </testcase>
+    <testcase classname="Users.vue hideDialog function" name="Users.vue hideDialog function" time="0.156">
+    </testcase>
+    <testcase classname="Users.vue saveUser function" name="Users.vue saveUser function" time="0.191">
+    </testcase>
+    <testcase classname="Users.vue openContextMenu function" name="Users.vue openContextMenu function" time="0.163">
     </testcase>
   </testsuite>
 </testsuites>

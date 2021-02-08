@@ -9,5 +9,6 @@ module.exports = {
 		'!src/main.js',
 		'!src/router/index.js'
 	],
-	reporters: ['default', 'jest-junit']
+	reporters: ['default', 'jest-junit'],
+	transformIgnorePatterns: ['node_modules/(?!(primevue/.*\\.vue$))']
 };
